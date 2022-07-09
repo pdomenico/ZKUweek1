@@ -24,7 +24,7 @@ describe("SystemOfEquations circuit test", function () {
         const witness = await circuit.calculateWitness(INPUT, true);
 
         //console.log(witness);
-
+        
         assert(Fr.eq(Fr.e(witness[0]),Fr.e(1)));
         assert(Fr.eq(Fr.e(witness[1]),Fr.e(1)));
     });
